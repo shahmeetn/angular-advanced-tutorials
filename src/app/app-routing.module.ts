@@ -18,6 +18,14 @@ const routes: Routes = [
     component: RegisterComponent
   },
   {
+    path: 'dashboard',
+    loadChildren: './modules/dashboard/dashboard.module#DashboardModule'
+  },
+  {
+    path: 'profile',
+    loadChildren: './modules/profile/profile.module#ProfileModule'
+  },
+  {
     path: '',
     pathMatch: 'full',
     redirectTo: 'home'
